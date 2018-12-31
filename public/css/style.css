@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #869AFA;
+}
+
+header {
+  overflow: hidden;
+  padding: 15px;
+}
+header .left { float: left; }
+header .right { float: right; }
+
+header .right ul {
+  margin: 0;
+  padding: 0;
+}
+
+header .right ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 15px;
+}
+header .right ul li:last-child { margin-right: 0; }
+header .right ul li a {
+  text-decoration: none;
+}
+
+.page {
+  margin: 15px auto 0;
+  max-width: 980px;
+}
