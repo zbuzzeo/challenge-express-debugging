@@ -6,11 +6,11 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // variables were re-routed. also changed to ./routes instead of ./router.
-const home = require('./routes/home/get/index'); // rename this to router?
-const about = require('./routes/about/get/index'); // rename this to router?
-const contact = require('./routes/contact/get/index'); // rename this to router?
+const home = require('./routes/home/get/index');
+const about = require('./routes/about/get/index');
+const contact = require('./routes/contact/get/index');
 
-// express.statc('public'); is not a route
+// express.static('public'); is not a route
 app.use(express.static('./public'));
 app.engine('.hbs', exphbs({extname: '.hbs', defaultLayout: 'main'}));
 app.set('view engine', '.hbs');
